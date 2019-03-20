@@ -1,7 +1,7 @@
 # nlp-env
 
 ## Build
-docker build -t <user-name>/<image-name> .
+docker build -t <<user-name>>/<<image-name>> .
 
 ## Run
 docker run --name <container-name> -it -v ${PWD}/src:/app/src --rm <user-name>/<image-name>
