@@ -19,4 +19,5 @@ RUN pip3 install tensorflow-hub
 RUN pip3 install flask-restful
 RUN pip3 install flask-restful
 RUN python3 -m spacy download en_core_web_lg
-ENTRYPOINT ["python3"]
+#ENTRYPOINT ["python3"]
+CMD ["bash"]
