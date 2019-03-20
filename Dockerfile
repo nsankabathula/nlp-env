@@ -11,7 +11,7 @@ RUN ls -altr
 RUN mkdir /app
 WORKDIR /app/
 RUN ls -altr
-RUN mkdir /src
+RUN mkdir src
 ENV PATH /app/src:$PATH
 RUN ls -altr
 #VOLUME /usr/share/elasticsearch/data
