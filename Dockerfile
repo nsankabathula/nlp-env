@@ -10,8 +10,6 @@ RUN apt-get update -y
 RUN ls -altr
 ADD ./ ./app
 WORKDIR /app
-RUN ls -altr
-RUN mkdir src
 ENV PATH /app/src:$PATH
 RUN ls -altr
 #VOLUME /usr/share/elasticsearch/data
