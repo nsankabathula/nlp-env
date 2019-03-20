@@ -7,9 +7,12 @@ RUN apt-get install -y python3.6 python3.6-dev python3-pip gcc build-essential
 #RUN apt-get install -y python-pip python-dev build-essential gcc # python 2.7
 RUN apt-get update -y
 
-RUN mkdir /usr/app/src
-WORKDIR /usr/app/
-ENV PATH /usr/app/src:$PATH
+RUN ls -altr
+RUN mkdir /app
+WORKDIR /app/
+RUN ls -altr
+RUN mkdir /src
+ENV PATH /app/src:$PATH
 RUN ls -altr
 #VOLUME /usr/share/elasticsearch/data
 
