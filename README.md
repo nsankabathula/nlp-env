@@ -10,4 +10,6 @@ docker run --name container-name -it -v ${PWD}/src:/app/src --rm user-name/image
 ## Stop
 docker stop container-name
   
-  
+
+### NOTE:
+Replace user-name, image-name & container-name
